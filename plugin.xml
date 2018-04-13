@@ -53,16 +53,6 @@
         <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.RECORD_AUDIO" />
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-            <provider
-                    android:name="android.support.v4.content.FileProvider"
-                    android:authorities="nl.x-services.plugins.videocaptureplus.provider"
-                    android:exported="false"
-                    android:grantUriPermissions="true">
-                <meta-data
-                        android:name="android.support.FILE_PROVIDER_PATHS"
-                        android:resource="@xml/provider_paths2"/>
-            </provider>
-
         </config-file>
 
         <source-file src="src/android/nl/xservices/plugins/videocaptureplus/VideoCapturePlus.java"
